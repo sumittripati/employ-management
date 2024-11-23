@@ -1,0 +1,103 @@
+<html>
+ <head>
+  <title>
+   Employee Management
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ </head>
+ <body>
+  <div class="header">
+   Employee
+  </div>
+  <div class="container">
+   <div class="buttons">
+    <button id="add-btn">
+     <i class="fas fa-plus">
+     </i>
+     Add Employee
+    </button>
+   </div>
+   <table>
+    <thead>
+     <tr>
+      <th>
+       Id
+      </th>
+      <th>
+       Name
+      </th>
+      <th>
+       Last Name
+      </th>
+      <th>
+       E-mail
+      </th>
+      <th>
+       Office Code
+      </th>
+      <th>
+       Job Title
+      </th>
+      <th>
+       Action
+      </th>
+     </tr>
+    </thead>
+    <tbody id="insertArea">
+    
+    </tbody>
+   </table>
+   <div class="form-container" id="registerForm">
+    <div class="close-icon" id="closeIcon">
+     <i class="fas fa-times">
+     </i>
+    </div>
+    <div class="profile-pic">
+     <img alt="Profile Picture" height="100" src="https://storage.googleapis.com/a1aa/image/fWW85bYfHzm6VE9HelaB0fnHNZceZCifdXBuli8iwR0XV5v8E.jpg" width="100"/>
+     <div class="add-pic">
+      +
+     </div>
+    </div>
+    <form class="form-fields" id="formDetail">
+     <label for="id">
+      Id
+     </label>
+     <input id="id" type="text" required/>
+
+
+     <label for="name">
+      Name
+     </label>
+     <input id="name" type="text" required/>
+     <label for="last-name">
+      Last Name
+     </label>
+     <input id="last-name" type="text" required/>
+     <label for="email">
+      E-mail
+     </label>
+     <input id="email" type="email" required/>
+     <label for="office-code">
+      Office Code
+     </label>
+     <input id="office-code" type="text" required/>
+     <label for="job-title">
+      Job Title
+     </label>
+     <input id="job-title" type="text" required/>
+     <div class="buttons">
+      <button id="registForm">
+       Register
+      </button>
+      <button id="updateForm">
+       Update
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+  <script src="./script.js"></script>
+ </body>
+</html>
